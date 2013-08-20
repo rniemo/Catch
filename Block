@@ -1,0 +1,8 @@
+
+
+public class Block{
+
+  private Vector position;
+  private Vector velocity;
+
+}

@@ -1,0 +1,37 @@
+import javax.swing.JFrame;
+import javax.swing.Timer;
+
+public class World{
+
+  Frame frame;
+  Timer timer;
+  NPanel panel;
+
+  public World(){
+    panel = new NPanel(this);
+    frame = new JFrame("Catch");
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setSize(400, 400);
+    frame.setResizable(false);
+    frame.getContentPane().add(panel);
+    timer = new Timer(1000 / 60, new ActionListener(){
+      public void actionPerformed(ActionEvent e){
+        updateWorld();
+      }});
+  
+  }
+  
+  public void start(){
+  
+  }
+  
+  updateWorld(){
+  
+  }
+
+
+  public static void main(String[] args){
+    new World().start();
+  }
+
+}

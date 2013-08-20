@@ -3,9 +3,9 @@ import javax.swing.Timer;
 
 public class World{
 
-  Frame frame;
-  Timer timer;
-  NPanel panel;
+  private Frame frame;
+  private Timer timer;
+  private NPanel panel;
 
   public World(){
     panel = new NPanel(this);
@@ -22,11 +22,13 @@ public class World{
   }
   
   public void start(){
-  
+    frame.setVisible(true);
+    timer.start();
   }
   
   updateWorld(){
-  
+    //update character & falling blocks here
+    panel.repaint();
   }
 
 

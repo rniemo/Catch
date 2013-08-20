@@ -1,0 +1,18 @@
+import javax.swing.JPanel;
+import java.awt.Graphics2D;
+import java.awt.Graphics;
+
+public class NPanel extends JPanel{
+
+  private World world;
+  
+  public NPanel(World w){
+    world = w;
+  }
+  
+  public void paintComponent(Graphics g){
+    Graphics2D g2d = (Graphics2D) g;
+    super.paintComponent(g2d);
+    
+  }
+}
